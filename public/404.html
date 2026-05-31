@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>飞行器结构防隔热学习平台</title>
+  <script>
+    // Redirect all 404s to the SPA entry point preserving the path as hash
+    (function() {
+      var path = window.location.pathname.replace(/\/$/, '');
+      var repoName = '/aircraft-tps-learning';
+      // Strip the repo name prefix to get the route path
+      if (path.indexOf(repoName) === 0) {
+        path = path.slice(repoName.length) || '/';
+      }
+      // Only redirect if not already at root
+      if (path !== '/' && path !== '') {
+        sessionStorage.setItem('redirect', path);
+      }
+      window.location.replace(repoName + '/');
+    })();
+  </script>
+</head>
+<body>
+  <p>正在跳转...</p>
+</body>
+</html>
