@@ -8,6 +8,14 @@ interface UseMarkdownResult {
   error: string | null;
 }
 
+function resolvePath(path: string): string {
+  // Convert absolute paths to relative for subdirectory deployment (e.g. GitHub Pages)
+  if (path.startsWith('/')) {
+    return '.' + path;
+  }
+  return path;
+}
+
 export function useMarkdown(path: string): UseMarkdownResult {
   const [content, setContent] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
@@ -25,19 +33,21 @@ export function useMarkdown(path: string): UseMarkdownResult {
         return;
       }
 
-      if (mdCache.has(path)) {
+      const resolvedPath = resolvePath(path);
+
+      if (mdCache.has(resolvedPath)) {
         if (!cancelled) {
-          setContent(mdCache.get(path)!);
+          setContent(mdCache.get(resolvedPath)!);
           setLoading(false);
         }
         return;
       }
 
       try {
-        const res = await fetch(path);
+        const res = await fetch(resolvedPath);
         if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
         const text = await res.text();
-        mdCache.set(path, text);
+        mdCache.set(resolvedPath, text);
         if (!cancelled) {
           setContent(text);
           setLoading(false);

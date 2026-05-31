@@ -8,6 +8,14 @@ interface UseContentResult<T> {
   error: string | null;
 }
 
+function resolvePath(path: string): string {
+  // Convert absolute paths to relative for subdirectory deployment (e.g. GitHub Pages)
+  if (path.startsWith('/')) {
+    return '.' + path;
+  }
+  return path;
+}
+
 export function useContent<T>(path: string): UseContentResult<T> {
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState(true);
@@ -15,21 +23,22 @@ export function useContent<T>(path: string): UseContentResult<T> {
 
   useEffect(() => {
     let cancelled = false;
+    const resolvedPath = resolvePath(path);
 
     async function load() {
-      if (contentCache.has(path)) {
+      if (contentCache.has(resolvedPath)) {
         if (!cancelled) {
-          setData(contentCache.get(path) as T);
+          setData(contentCache.get(resolvedPath) as T);
           setLoading(false);
         }
         return;
       }
 
       try {
-        const res = await fetch(path);
+        const res = await fetch(resolvedPath);
         if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
         const json = await res.json();
-        contentCache.set(path, json);
+        contentCache.set(resolvedPath, json);
         if (!cancelled) {
           setData(json);
           setLoading(false);
