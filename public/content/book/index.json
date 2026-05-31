@@ -1,0 +1,160 @@
+{
+  "topics": [
+    {
+      "id": "thermal-basics",
+      "title": "第一章：热防护基础理论",
+      "description": "学习热传导、对流和辐射的基本原理，建立热防护分析的理论基础",
+      "icon": "🔥",
+      "chapters": ["thermal-conduction-basics", "convection-heat-transfer", "radiation-heat-transfer", "combined-heat-transfer"]
+    },
+    {
+      "id": "material-science",
+      "title": "第二章：防热材料科学",
+      "description": "了解各类热防护材料的物理特性、力学性能和适用场景",
+      "icon": "🧪",
+      "chapters": ["ablative-materials", "ceramic-matrix-composites", "metallic-tps", "creep-behavior-superalloy"]
+    },
+    {
+      "id": "structural-design",
+      "title": "第三章：飞行器结构设计",
+      "description": "掌握典型飞行器热防护结构的工程设计方法与优化技术",
+      "icon": "⚙️",
+      "chapters": ["tps-structure-overview", "thermal-stress-analysis", "lightweight-design"]
+    },
+    {
+      "id": "application",
+      "title": "第四章：工程应用与案例",
+      "description": "分析国内外典型飞行器热防护系统案例，理解工程实践中的关键技术",
+      "icon": "🚀",
+      "chapters": ["reentry-vehicle-tps", "hypersonic-thermal", "rocket-nozzle-cooling"]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "thermal-conduction-basics",
+      "topicId": "thermal-basics",
+      "title": "热传导基本原理",
+      "order": 1,
+      "contentFile": "/content/book/chapters/ch01-thermal-conduction.md",
+      "estimatedMinutes": 30,
+      "tags": ["热传导", "傅里叶定律", "稳态导热"]
+    },
+    {
+      "id": "convection-heat-transfer",
+      "topicId": "thermal-basics",
+      "title": "对流换热理论与计算",
+      "order": 2,
+      "contentFile": "/content/book/chapters/ch02-convection.md",
+      "estimatedMinutes": 35,
+      "tags": ["对流换热", "边界层", "努塞尔数"]
+    },
+    {
+      "id": "radiation-heat-transfer",
+      "topicId": "thermal-basics",
+      "title": "辐射换热基础",
+      "order": 3,
+      "contentFile": "/content/book/chapters/ch03-radiation.md",
+      "estimatedMinutes": 25,
+      "tags": ["辐射换热", "黑体辐射", "角系数"]
+    },
+    {
+      "id": "combined-heat-transfer",
+      "topicId": "thermal-basics",
+      "title": "复合换热分析",
+      "order": 4,
+      "contentFile": "/content/book/chapters/ch04-combined.md",
+      "estimatedMinutes": 40,
+      "tags": ["复合换热", "热网络法", "数值模拟"]
+    },
+    {
+      "id": "ablative-materials",
+      "topicId": "material-science",
+      "title": "烧蚀防热材料",
+      "order": 5,
+      "contentFile": "/content/book/chapters/ch05-ablative.md",
+      "estimatedMinutes": 35,
+      "tags": ["烧蚀材料", "碳化层", "热解"]
+    },
+    {
+      "id": "ceramic-matrix-composites",
+      "topicId": "material-science",
+      "title": "陶瓷基复合材料",
+      "order": 6,
+      "contentFile": "/content/book/chapters/ch06-cmc.md",
+      "estimatedMinutes": 30,
+      "tags": ["C/SiC", "SiC/SiC", "高温性能"]
+    },
+    {
+      "id": "metallic-tps",
+      "topicId": "material-science",
+      "title": "金属热防护系统",
+      "order": 7,
+      "contentFile": "/content/book/chapters/ch07-metallic-tps.md",
+      "estimatedMinutes": 30,
+      "tags": ["高温合金", "蜂窝结构", "金属TPS"]
+    },
+    {
+      "id": "creep-behavior-superalloy",
+      "topicId": "material-science",
+      "title": "高温合金蠕变与本构模型",
+      "order": 8,
+      "contentFile": "/content/book/chapters/ch08-creep.md",
+      "estimatedMinutes": 40,
+      "tags": ["蠕变", "镍基合金", "本构方程"]
+    },
+    {
+      "id": "tps-structure-overview",
+      "topicId": "structural-design",
+      "title": "热防护结构概述",
+      "order": 9,
+      "contentFile": "/content/book/chapters/ch09-tps-structure.md",
+      "estimatedMinutes": 30,
+      "tags": ["TPS分类", "结构形式", "设计准则"]
+    },
+    {
+      "id": "thermal-stress-analysis",
+      "topicId": "structural-design",
+      "title": "热应力分析方法",
+      "order": 10,
+      "contentFile": "/content/book/chapters/ch10-thermal-stress.md",
+      "estimatedMinutes": 45,
+      "tags": ["热应力", "有限元", "热-力耦合"]
+    },
+    {
+      "id": "lightweight-design",
+      "topicId": "structural-design",
+      "title": "轻量化设计技术",
+      "order": 11,
+      "contentFile": "/content/book/chapters/ch11-lightweight.md",
+      "estimatedMinutes": 35,
+      "tags": ["轻量化", "拓扑优化", "夹层结构"]
+    },
+    {
+      "id": "reentry-vehicle-tps",
+      "topicId": "application",
+      "title": "再入飞行器热防护系统",
+      "order": 12,
+      "contentFile": "/content/book/chapters/ch12-reentry.md",
+      "estimatedMinutes": 40,
+      "tags": ["再入弹道", "航天飞机", "载人飞船"]
+    },
+    {
+      "id": "hypersonic-thermal",
+      "topicId": "application",
+      "title": "高超声速气动加热",
+      "order": 13,
+      "contentFile": "/content/book/chapters/ch13-hypersonic.md",
+      "estimatedMinutes": 35,
+      "tags": ["高超声速", "激波", "气动加热"]
+    },
+    {
+      "id": "rocket-nozzle-cooling",
+      "topicId": "application",
+      "title": "液体火箭发动机冷却技术",
+      "order": 14,
+      "contentFile": "/content/book/chapters/ch14-rocket-cooling.md",
+      "estimatedMinutes": 30,
+      "tags": ["再生冷却", "发汗冷却", "液膜冷却"]
+    }
+  ]
+}

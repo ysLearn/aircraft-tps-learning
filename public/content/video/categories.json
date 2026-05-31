@@ -1,0 +1,9 @@
+{
+  "categories": [
+    { "id": "all", "name": "全部", "icon": "📺" },
+    { "id": "theory", "name": "基础理论", "icon": "📖" },
+    { "id": "experiment", "name": "实验演示", "icon": "🔬" },
+    { "id": "engineering", "name": "工程案例", "icon": "⚙️" },
+    { "id": "lecture", "name": "专家讲座", "icon": "🎙️" }
+  ]
+}

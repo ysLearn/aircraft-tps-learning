@@ -1,0 +1,114 @@
+[
+  {
+    "id": "china-reusable-tps",
+    "title": "我国可重复使用航天器热防护系统取得重大突破",
+    "summary": "中国航天科技集团在可重复使用热防护系统领域取得重要进展，新型轻质TPS材料已完成地面验证试验，可承受多次再入热循环。",
+    "contentFile": "/content/news/articles/china-reusable-tps.md",
+    "source": "domestic",
+    "sourceName": "中国航天科技集团",
+    "publishDate": "2026-05-15",
+    "tags": ["可重复使用", "TPS", "地面验证"],
+    "originalUrl": "https://www.spacechina.com/"
+  },
+  {
+    "id": "nasa-new-tps-material",
+    "title": "NASA开发出耐高温新型热防护材料HEEET",
+    "summary": "NASA艾姆斯研究中心成功开发HEEET（Heatshield for Extreme Entry Environment Technology），可承受极端进入环境的热流密度，比PICA性能提升30%。",
+    "contentFile": "/content/news/articles/nasa-heet.md",
+    "source": "international",
+    "sourceName": "NASA Ames Research Center",
+    "publishDate": "2026-04-28",
+    "imageUrl": "",
+    "tags": ["NASA", "HEEET", "新材料", "极端环境"],
+    "originalUrl": "https://www.nasa.gov/"
+  },
+  {
+    "id": "esa-ixv-tps",
+    "title": "欧空局IXV验证机热防护系统飞行试验分析报告发布",
+    "summary": "ESA公布IXV（Intermediate eXperimental Vehicle）再入验证机的TPS飞行后分析结果，陶瓷基防热瓦表现超出预期。",
+    "contentFile": "/content/news/articles/esa-ixv-tps.md",
+    "source": "international",
+    "sourceName": "ESA",
+    "publishDate": "2026-04-15",
+    "tags": ["ESA", "IXV", "陶瓷基复合材料", "飞行试验"],
+    "originalUrl": "https://www.esa.int/"
+  },
+  {
+    "id": "additive-manufacturing-cmc",
+    "title": "西工大在3D打印陶瓷基复合材料防热构件方面取得新进展",
+    "summary": "西北工业大学利用数字光处理(DLP)3D打印技术制备出复杂几何形状的SiC/SiC防热构件，致密度达到理论密度的97%，弯曲强度超过400 MPa。",
+    "contentFile": "/content/news/articles/additive-manufacturing-cmc.md",
+    "source": "domestic",
+    "sourceName": "西北工业大学",
+    "publishDate": "2026-05-10",
+    "tags": ["增材制造", "SiC/SiC", "3D打印", "复杂构件"],
+    "originalUrl": "https://www.nwpu.edu.cn/"
+  },
+  {
+    "id": "hypersonic-test-facility",
+    "title": "中国建成世界最大口径高超声速风洞",
+    "summary": "JF-22超高速风洞正式投入使用，可模拟马赫数30的高超声速飞行环境，为热防护系统研究提供前所未有的地面试验能力。",
+    "contentFile": "/content/news/articles/hypersonic-test-facility.md",
+    "source": "domestic",
+    "sourceName": "中国科学院力学研究所",
+    "publishDate": "2026-05-01",
+    "imageUrl": "",
+    "tags": ["高超声速风洞", "JF-22", "地面试验"],
+    "originalUrl": "https://www.imech.ac.cn/"
+  },
+  {
+    "id": "spacex-starship-flight-7",
+    "title": "SpaceX星舰第七次试飞热防护系统表现分析",
+    "summary": "Starship第七次综合飞行测试中，升级后的六角隔热瓦阵列表现出良好的抗振动和抗热冲击性能，仅少数瓦片出现局部损伤。",
+    "contentFile": "/content/news/articles/spacex-starship-ift7.md",
+    "source": "international",
+    "sourceName": "SpaceX",
+    "publishDate": "2026-05-20",
+    "tags": ["SpaceX", "Starship", "隔热瓦", "飞行测试"],
+    "originalUrl": "https://www.spacex.com/"
+  },
+  {
+    "id": "ultra-high-temp-ceramics",
+    "title": "超高温陶瓷材料研究最新综述：从实验室到工程应用",
+    "summary": "国际知名期刊发表长篇综述，系统总结过渡金属硼化物、碳化物超高温陶瓷在热防护领域的研究进展、关键挑战和产业化路径。",
+    "contentFile": "/content/news/articles/ultra-high-temp-ceramics.md",
+    "source": "international",
+    "sourceName": "Journal of the European Ceramic Society",
+    "publishDate": "2026-03-20",
+    "tags": ["超高温陶瓷", "综述", "产业化"],
+    "originalUrl": "https://www.sciencedirect.com/"
+  },
+  {
+    "id": "data-driven-tps-design",
+    "title": "数据驱动方法在热防护系统优化设计中的应用",
+    "summary": "哈工大团队提出基于深度学习的TPS代理模型，将热防护系统多学科优化设计周期从天级缩短至分钟级，精度损失小于2%。",
+    "contentFile": "/content/news/articles/data-driven-tps-design.md",
+    "source": "domestic",
+    "sourceName": "哈尔滨工业大学",
+    "publishDate": "2026-04-08",
+    "tags": ["数据驱动", "深度学习", "优化设计", "代理模型"],
+    "originalUrl": "https://www.hit.edu.cn/"
+  },
+  {
+    "id": "darpa-glide-breaker",
+    "title": "DARPA Glide Breaker项目热防护技术解密",
+    "summary": "美国DARPA公布Glide Breaker高超声速拦截器部分热防护方案，采用主动冷却与被动防热结合的复合TPS设计理念。",
+    "contentFile": "/content/news/articles/darpa-glide-breaker.md",
+    "source": "international",
+    "sourceName": "DARPA",
+    "publishDate": "2026-02-14",
+    "tags": ["DARPA", "高超声速", "主动冷却", "拦截器"],
+    "originalUrl": "https://www.darpa.mil/"
+  },
+  {
+    "id": "reusable-rocket-tps",
+    "title": "我国液氧甲烷可重复使用火箭热防护系统通过评审",
+    "summary": "蓝箭航天空间科技股份有限公司研制的朱雀三号火箭一级热防护系统通过设计评审，采用金属TPS加柔性隔热毡的复合方案。",
+    "contentFile": "/content/news/articles/reusable-rocket-tps.md",
+    "source": "domestic",
+    "sourceName": "蓝箭航天",
+    "publishDate": "2026-05-25",
+    "tags": ["可重复使用火箭", "金属TPS", "朱雀三号"],
+    "originalUrl": "https://www.landspace.com/"
+  }
+]
