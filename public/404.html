@@ -5,12 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>飞行器结构防隔热学习平台</title>
   <script>
-    // Redirect 404s to the SPA preserving the path as hash
-    var path = window.location.pathname.replace(/\/$/, '') || '/';
-    if (path !== '/') {
-      sessionStorage.setItem('redirect', path);
-    }
-    window.location.replace('/');
+    var seg = window.location.pathname.split('/');
+    var repo = seg[1] || '';
+    sessionStorage.setItem('redirect', window.location.pathname);
+    window.location.replace('/' + repo + '/');
   </script>
 </head>
 <body><p>正在跳转...</p></body>
